@@ -90,8 +90,8 @@ get_header();?>
 
                     <div class="row">
                         <div class="col-sm-6">
-                            <h3><?php echo $column1_title ?></h3>
-                            <p><?php echo $column1_description ?></p>
+                            <h3><?php echo $column1_title; ?></h3>
+                            <p><?php echo $column1_description; ?></p>
                         </div>
 
                         <div class="col-sm-6">

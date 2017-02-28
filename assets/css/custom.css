@@ -1,0 +1,541 @@
+/**
+ *
+ * Color
+ *
+ */
+/*----------  BASE  ----------*/
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  overflow-x: hidden;
+}
+body {
+  margin-top: 50px;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  background: url('../img/tile.jpg') top left repeat;
+}
+/*----------  GLOBALS  ----------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+h1 {
+  font-size: 3em;
+}
+h1,
+h2 {
+  margin: 0 0 40px;
+}
+h3 {
+  margin: 20px 0;
+}
+h4 {
+  font-size: .8rem;
+}
+@media (min-width: 564px) {
+  h4 {
+    font-size: 1.125rem;
+  }
+}
+p.lead {
+  font-weight: normal;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+.btn {
+  font-weight: bold;
+}
+.btn-danger {
+  background-color: #dd5638;
+}
+.btn-success {
+  background-color: #79b044;
+  border: none;
+}
+.btn-success:hover {
+  background-color: #6a9b3d;
+  border-color: #6a9b3d;
+}
+img {
+  max-width: 100%;
+}
+section {
+  padding: 80px 0;
+}
+.section-header {
+  text-align: center;
+}
+section h2 {
+  margin: 20px 0 40px;
+}
+section h3 {
+  margin: 30px 0 10px;
+}
+.modal-content {
+  background: url('../img/tile.jpg') top left repeat;
+}
+.badge.social {
+  background-color: #ccc;
+  font-size: 1.5rem;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 2.51rem;
+  margin: 0 5px 20px 0;
+  padding: 0;
+  border-radius: 50px;
+}
+.badge.social.twitter:hover {
+  background-color: #55acee;
+}
+blockquote {
+  border: none;
+  font-style: italic;
+  text-align: left;
+}
+blockquote cite {
+  display: block;
+  color: #777;
+  margin: 15px 0 0 0;
+}
+/*----------  LAYOUT  ----------*/
+/*=====  Hero  ======*/
+#hero {
+  background: url('../img/hero-bg.jpg') 50% 0 repeat fixed;
+  min-height: 500px;
+  padding: 40px 0;
+  color: white;
+}
+#hero article {
+  width: 100%;
+  text-align: center;
+}
+#hero .hero-text {
+  margin-top: 30px;
+  /* end price timeline*/
+}
+#hero .hero-text .price-timeline {
+  margin: 30px 0 60px;
+  text-align: center;
+  /* end price*/
+}
+#hero .hero-text .price-timeline .price {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  margin: 0 1% 0 0;
+  width: 30%;
+  background: #3e4249;
+  padding: 5px 10px 15px;
+  /*end span*/
+}
+@media (min-width: 564px) {
+  #hero .hero-text .price-timeline .price {
+    margin: 0 2% 0 0;
+    padding: 10px 20px 30px;
+  }
+}
+#hero .hero-text .price-timeline .price.active {
+  background-color: #dd5638;
+}
+#hero .hero-text .price-timeline .price span {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-color: #101010;
+  line-height: 40px;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 100%;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  margin-left: -20px;
+}
+@media (min-width: 564px) {
+  #hero .hero-text .price-timeline .price span {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 1.5rem;
+    bottom: -35px;
+    margin-left: -35px;
+  }
+}
+#hero .hero-text .price-timeline h4 {
+  margin: 0 0 10px;
+}
+#hero .hero-text .price-timeline h4 small {
+  color: #fff;
+  font-weight: bold;
+  display: block;
+}
+/*end hero*/
+/*=====  Subsribe  ======*/
+#subscribe {
+  background: #3e4249;
+  padding: 20px 0;
+  color: #fff;
+  font-size: 1.2em;
+}
+#subscribe p {
+  margin: 7px 0 0 7px;
+}
+@media (min-width: 564px) {
+  #subscribe p {
+    margin: 7px 0 0px;
+  }
+}
+/*=====  Modal  ======*/
+.close {
+  font-size: 2em;
+}
+/*end Modal*/
+/*=====  Benefit  ======*/
+#benefit {
+  background-color: #fff;
+}
+/*end benefit*/
+/*=====  features  ======*/
+#features {
+  background-color: #3e4249;
+  color: #fff;
+  text-align: center;
+}
+#features i.ci {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: url('../img/icon-sprite.png') no-repeat;
+}
+#features i.ci.ci-computer {
+  background-position: 0 0;
+}
+#features i.ci.ci-watch {
+  background-position: -40px 0;
+}
+#features i.ci.ci-calender {
+  background-position: -80px 0;
+}
+#features i.ci.ci-community {
+  background-position: -120px 0;
+}
+#features i.ci.ci-instructor {
+  background-position: -160px 0;
+}
+#features i.ci.ci-device {
+  background-position: -200px 0;
+}
+/*end features*/
+/*=====  Result  ======*/
+#result {
+  text-align: center;
+}
+/*end result*/
+/*=====  Video  ======*/
+#video {
+  background: url('../img/stuff-bg.jpg') 50% 100% no-repeat fixed;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+/*end video*/
+/*=====  instructor  ======*/
+#instructor {
+  background: url('../img/led.jpg') 80% 10% no-repeat;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+@media (min-width: 576px) {
+  #instructor {
+    background-color: #fff ;
+  }
+}
+#instructor h2 {
+  margin: 0 0 20px;
+}
+#instructor .num {
+  display: table;
+  line-height: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  height: 90px;
+  width: 90px;
+  text-align: center;
+  background-color: #dd5638;
+  border-radius: 100%;
+}
+@media (min-width: 564px) {
+  #instructor .num {
+    height: 140px;
+    width: 140px;
+    font-size: 2rem;
+  }
+}
+#instructor .num .num-content {
+  display: table-cell;
+  vertical-align: middle;
+}
+#instructor .num span {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: normal;
+}
+/*end instructor*/
+/*=====  Testimonial  ======*/
+#testimonial {
+  text-align: center;
+}
+#testimonial .testimonial {
+  margin-bottom: 60px;
+}
+#testimonial cite {
+  display: block;
+}
+/*end testimonial*/
+/*=====  Sign up  ======*/
+#signup {
+  text-align: center;
+  background: url('../img/hipster-stuff.jpg') center center repeat fixed;
+  color: white;
+  padding: 140px 0;
+}
+#signup h2 {
+  font-weight: normal;
+}
+#signup .btn {
+  font-size: 1.5rem;
+}
+/*end signup*/
+/*----------  Footer  ----------*/
+footer {
+  background-color: #3e4249;
+  color: white;
+  padding: 20px 0 10px;
+  font-size: 1rem;
+}
+footer p {
+  margin: 0;
+}
+footer a:link,
+footer a:visited {
+  color: white;
+}
+footer a:hover {
+  color: #dd5638;
+}
+footer li.singup-link a {
+  color: #dd5638;
+}
+footer li.singup-link a:hover {
+  font-weight: bold;
+}
+/*----------  BLOG  ----------*/
+#primary {
+  padding: 40px 0;
+}
+.feature-image {
+  text-align: center;
+  display: table;
+  width: 100%;
+}
+.feature-image h1 {
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+}
+.feature-image-default-alt {
+  background: url('../img/hipster-stuff.jpg') no-repeat;
+  background-size: cover;
+}
+/* end feature img*/
+.post,
+.widget,
+#comment {
+  position: relative;
+  border: solid 1px #ddd;
+  background-color: #fff;
+  margin: 0 0 40px;
+  border-radius: 4px;
+}
+.post header,
+.widget header,
+#comment header {
+  padding: 20px;
+}
+.post header h3,
+.widget header h3,
+#comment header h3,
+.post header h1,
+.widget header h1,
+#comment header h1 {
+  margin: 0 0 15px;
+  padding: 0 0 15px;
+  border-bottom: solid 1px #ddd;
+}
+.post header h1,
+.widget header h1,
+#comment header h1 {
+  font-size: 1.5rem;
+}
+.post .post-img,
+.widget .post-img,
+#comment .post-img {
+  height: auto;
+}
+.post .post-meta,
+.widget .post-meta,
+#comment .post-meta {
+  width: 90%;
+}
+.post .post-meta i.fa,
+.widget .post-meta i.fa,
+#comment .post-meta i.fa {
+  padding-left: 10px;
+}
+.post .post-meta i.fa:first-child,
+.widget .post-meta i.fa:first-child,
+#comment .post-meta i.fa:first-child {
+  padding: 0;
+}
+.post .post-excerpt,
+.widget .post-excerpt,
+#comment .post-excerpt {
+  padding: 20px;
+}
+.post .post-comment,
+.widget .post-comment,
+#comment .post-comment {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  border: none;
+  border-radius: 100%;
+  background-color: #79b044;
+  text-align: center;
+  display: table;
+}
+@media (min-width: 564px) {
+  .post .post-comment,
+  .widget .post-comment,
+  #comment .post-comment {
+    height: 70px;
+    width: 70px;
+    top: 25px;
+  }
+}
+.post .post-comment:hover,
+.widget .post-comment:hover,
+#comment .post-comment:hover {
+  background-color: #8bc653;
+}
+.post .post-comment a,
+.widget .post-comment a,
+#comment .post-comment a {
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  display: table-cell;
+  vertical-align: middle;
+}
+.post .post-comment a i,
+.widget .post-comment a i,
+#comment .post-comment a i {
+  display: block;
+  padding: 0;
+}
+/* end post*/
+/*=====  Sidebar  ======*/
+.widget {
+  padding: 20px;
+}
+.widget h4 {
+  margin: 0 0 10px;
+  padding: 0 0 10px;
+  border-bottom: solid 1px #ddd;
+}
+.widget ul {
+  list-style: none;
+  padding: 0;
+}
+.widget ul li:hover {
+  position: relative;
+  left: 1px;
+}
+.widget ul li:hover a {
+  color: #ccc;
+}
+/*----------  POST  ----------*/
+.post-body {
+  padding: 20px;
+}
+#comment .comment-wrap {
+  padding: 20px;
+}
+#comment h3 {
+  text-align: center;
+}
+#comment h4 {
+  font-size: 1.3em;
+}
+#comment ol {
+  padding: 0;
+}
+#comment ol li {
+  background-color: rgba(0, 0, 0, 0.02);
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  list-style-type: none;
+}
+#comment ol li ol.children {
+  padding: 0;
+  font-size: 0.96em;
+}
+#comment .leave-comment {
+  margin: 40px 0 0;
+  padding: 40px 0 0;
+  border-top: 1px solid #eee;
+}
+#comment textarea {
+  display: block;
+  width: 100%;
+}
+/*----------  RESOURECES  ----------*/
+.main-content {
+  padding-bottom: 0;
+}
+.resource {
+  width: 100%;
+  float: left;
+  margin: 0 2% 40px 0;
+}
+@media (min-width: 564px) {
+  .resource {
+    width: 48%;
+  }
+}
+@media (min-width: 768px) {
+  .resource {
+    width: 31.3333333%;
+  }
+}
+.resource:nth-child(3n) {
+  margin-right: 0;
+}
+/*----------  CONTACT  ----------*/
+#contact input,
+#contact textarea {
+  margin-bottom: 20px;
+}

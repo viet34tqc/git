@@ -1,0 +1,522 @@
+/**
+ *
+ * Color
+ *
+ */
+@green: #79b044;
+@salmon: #dd5638;
+@BlueGray: #3e4249;
+
+/*----------  BASE  ----------*/
+html{
+	box-sizing: border-box;
+	font-size: 100%;
+	overflow-x: hidden;
+}
+body{
+	margin-top: 50px;
+	font-family: 'Raleway', Helvetica, sans-serif;
+	font-size: 1em;
+	line-height: 1.5;
+	background: url('../img/tile.jpg') top left repeat;
+}
+
+/*----------  GLOBALS  ----------*/
+h1,h2,h3,h4,h5,h6{
+	font-weight: bold;
+}
+
+h1{
+	font-size: 3em;
+}
+
+h1,h2{
+	margin: 0 0 40px; 
+}
+
+h3{
+	margin: 20px 0;
+}
+
+h4{
+	font-size: .8rem;
+	@media (min-width: 564px) {
+		font-size: 1.125rem;			
+	}
+}
+p.lead{
+	font-weight: normal;
+}
+a:hover, a:focus{
+	text-decoration: none;
+}
+.btn{
+	font-weight: bold;
+}
+
+.btn-danger{
+	background-color: #dd5638;
+}
+
+.btn-success{
+	background-color: #79b044;
+	border: none;
+	&:hover{
+		background-color: #6a9b3d;
+		border-color: #6a9b3d;
+	}
+}
+
+img{
+	max-width: 100%;
+}
+
+section{
+	padding: 80px 0;
+}
+
+.section-header{
+	text-align: center;
+}
+
+section h2{
+	margin: 20px 0 40px;
+}
+
+section h3{
+	margin: 30px 0 10px 
+}
+
+.modal-content{
+	background: url('../img/tile.jpg') top left repeat;
+}
+
+.badge.social{
+	background-color: #ccc;
+	font-size: 1.5rem;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	line-height: 2.51rem;
+	margin: 0 5px 20px 0;
+	padding: 0;
+	border-radius: 50px;
+	&.twitter:hover{
+		background-color: #55acee;
+
+	}
+}
+
+blockquote{
+	border: none;
+	font-style: italic;
+	text-align: left;
+	cite{
+		display: block;
+		color: #777;
+		margin: 15px 0 0 0;
+	}
+}
+/*----------  LAYOUT  ----------*/
+
+/*=====  Hero  ======*/
+#hero{
+	background: url('../img/hero-bg.jpg') 50% 0 repeat fixed;
+	min-height: 500px;
+	padding: 40px 0;
+	color: white;
+	article{
+		width: 100%;
+		text-align: center;
+	}
+	.hero-text{
+		margin-top: 30px;
+		.price-timeline{
+		margin: 30px 0 60px;
+		text-align: center;
+			.price{
+				@media (min-width: 564px) {
+					margin: 0 2% 0 0;
+					padding: 10px 20px 30px;
+				}
+				display: inline-block;
+				position: relative;
+				vertical-align: top;
+				margin: 0 1% 0 0;
+				width: 30%;
+				background: @BlueGray;
+				padding: 5px 10px 15px;
+				&.active{
+					background-color: @salmon;
+				}
+				span{
+					@media (min-width: 564px) {
+					width: 70px;
+					height: 70px;
+					line-height: 70px;
+					font-size: 1.5rem;
+					bottom: -35px;
+					margin-left: -35px;
+				}
+					width: 40px;
+					height: 40px;
+					text-align: center;
+					background-color: #101010;
+					line-height: 40px;
+					font-weight: bold;
+					font-size: 1rem;
+					border-radius: 100%;
+					position: absolute;
+					bottom: -20px;
+					left: 50%;
+					margin-left: -20px;
+
+				} /*end span*/
+			} /* end price*/
+			h4{
+				margin: 0 0 10px;
+				small{
+					color: #fff;
+					font-weight: bold;
+					display: block;
+				}
+			}
+		}/* end price timeline*/
+	}
+} /*end hero*/
+
+/*=====  Subsribe  ======*/
+
+#subscribe{
+	background: @BlueGray;
+	padding: 20px 0;
+	color: #fff;
+	font-size: 1.2em;
+	p{
+		margin: 7px 0 0 7px;
+		@media (min-width: 564px){
+			margin: 7px 0 0px;
+		}
+	}
+}
+
+/*=====  Modal  ======*/
+.close{
+	font-size: 2em;
+}
+/*end Modal*/
+
+/*=====  Benefit  ======*/
+#benefit{
+	background-color: #fff;
+}
+/*end benefit*/
+
+/*=====  features  ======*/
+#features{
+	background-color: @BlueGray;
+	color: #fff;
+	text-align: center;
+	i.ci{
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		background:  url('../img/icon-sprite.png') no-repeat;
+		&.ci-computer{background-position: 0 0;}
+		&.ci-watch{background-position: -40px 0;}
+		&.ci-calender{background-position: -80px 0;}
+		&.ci-community{background-position: -120px 0;}
+		&.ci-instructor{background-position: -160px 0;}
+		&.ci-device{background-position: -200px 0;}
+	}
+}
+/*end features*/
+
+/*=====  Result  ======*/
+#result{
+	text-align: center;
+}
+/*end result*/
+
+/*=====  Video  ======*/
+#video{
+	background: url('../img/stuff-bg.jpg') 50% 100% no-repeat fixed;
+	background-size: cover;
+	text-align: center;
+	color: white;
+}
+/*end video*/
+
+/*=====  instructor  ======*/
+#instructor{
+	background: url('../img/led.jpg') 80% 10% no-repeat;
+	background-color: rgba(255,255,255,0.8);
+	
+	@media(min-width: 576px) {
+		background-color: #fff ;
+	}
+	h2{
+		margin: 0 0 20px;
+	}
+	.num{
+		@media (min-width: 564px) {
+			height: 140px;
+			width: 140px;
+			font-size: 2rem;
+		}
+		display: table;
+		line-height: 1.5rem;
+		font-size: 1.5rem;
+		font-weight: bold;
+		color: white;
+		height: 90px;
+		width: 90px;
+		text-align: center;
+		background-color: @salmon;
+		border-radius: 100%;
+		.num-content{
+			display: table-cell;
+			vertical-align: middle;
+		}
+		span{
+			display: inline-block;
+			font-size: 20px;
+			font-weight: normal;
+		}
+	}
+}
+/*end instructor*/
+
+/*=====  Testimonial  ======*/
+#testimonial{
+	text-align: center;
+	.testimonial{
+		margin-bottom: 60px;
+		
+	}
+	cite{
+		display: block;
+	}
+}
+/*end testimonial*/
+
+/*=====  Sign up  ======*/
+#signup{
+	text-align: center;
+	background:  url('../img/hipster-stuff.jpg') center center repeat fixed;
+	color: white;
+	padding: 140px 0;
+	h2{
+		font-weight: normal;
+	}
+	.btn{
+		font-size: 1.5rem;
+	}
+}
+/*end signup*/
+
+/*----------  Footer  ----------*/
+footer{
+	background-color: #3e4249;
+	color: white;
+	padding: 20px 0 10px;
+	font-size: 1rem;
+	p{
+		margin: 0;
+	}
+	a:link, a:visited{
+		color: white;
+	}
+	a:hover{
+		color: @salmon;
+	}
+
+	li.singup-link a{
+		color: @salmon;
+		&:hover{
+			font-weight: bold;
+		}
+	}
+
+}
+
+/*----------  BLOG  ----------*/
+#primary{
+	padding: 40px 0;
+}
+.feature-image{
+	text-align: center;
+	display: table;
+	width: 100%;
+	h1{
+		display: table-cell;
+		vertical-align:middle;
+		color: white;
+	}
+}
+
+.feature-image-default-alt{
+	background: url('../img/hipster-stuff.jpg') no-repeat;
+	background-size: cover;
+}/* end feature img*/
+.post, .widget, #comment{
+	position: relative;
+	border: solid 1px #ddd;
+	background-color: #fff;
+	margin: 0 0 40px;
+	border-radius: 4px;
+	header{
+		padding: 20px;
+		h3,h1{
+			margin: 0 0 15px;
+			padding: 0 0 15px;
+			border-bottom: solid 1px #ddd;
+		}
+		h1{
+			font-size: 1.5rem;
+		}
+	}
+
+	.post-img{
+		height: auto;
+	}
+
+	.post-meta{
+		width: 90%;
+		i.fa{
+			padding-left: 10px;
+			&:first-child{
+				padding: 0
+			}
+		}
+	}
+	.post-excerpt{
+		padding: 20px;
+	}
+
+	.post-comment{
+		height: 50px;
+		width: 50px;
+		position: absolute;
+		top: 30px;
+		right: 20px;
+		border: none;
+		border-radius: 100%;
+		background-color: @green;
+		text-align: center;
+		display: table;
+		@media (min-width: 564px) {
+			height: 70px;
+			width: 70px;
+			top: 25px;
+		}
+		&:hover{
+			background-color: #8bc653;
+		}
+		a{
+			color: white;
+			font-size: 1.2em;
+			font-weight: bold;
+			display: table-cell;
+			vertical-align: middle;
+			i{
+				display: block;
+				padding: 0;
+			}
+
+		}
+	}
+}/* end post*/
+
+/*=====  Sidebar  ======*/
+.widget{
+	padding: 20px;
+	h4{
+		margin: 0 0 10px;
+		padding: 0 0 10px;
+		border-bottom: solid 1px #ddd;
+	}
+	ul{
+		list-style: none;
+		padding: 0;
+		li:hover{
+			position: relative;
+			left: 1px;
+			a{
+				color: #ccc;
+			}
+		}
+	}
+
+}
+
+/*----------  POST  ----------*/
+.post-body{
+	padding: 20px;
+}
+
+#comment{
+	.comment-wrap{
+		padding: 20px;
+	}
+	h3{
+		text-align: center;
+	}
+	h4{
+		font-size: 1.3em;
+	}
+	ol {
+		padding: 0;
+		li{
+		background-color: rgba(0,0,0,.02);
+		padding: 10px 20px;
+		margin: 10px 0;
+		border-radius: 4px;
+		border: 1px solid rgba(0,0,0,.02);
+		list-style-type: none;
+		ol.children{
+			padding: 0;
+			font-size: 0.96em;
+		}
+	}
+	}
+
+	.leave-comment{
+		margin: 40px 0 0;
+		padding: 40px 0 0;
+		border-top: 1px solid #eee;
+	}
+	textarea{
+		display: block;
+		width: 100%;
+	}
+} 
+
+/*----------  RESOURECES  ----------*/
+
+	.main-content{
+		padding-bottom: 0;
+	}
+	.resource{
+		@media (min-width: 564px) {
+			width: 48%;
+		}
+		@media (min-width: 768px) {
+			width: 31.3333333%;
+		}
+		width: 100%;
+		float: left;
+		margin: 0 2% 40px 0;
+		&:nth-child(3n){
+			margin-right: 0;
+	}
+}
+
+/*----------  CONTACT  ----------*/
+#contact{
+
+	input, textarea{
+		margin-bottom: 20px;
+	}
+}
+
